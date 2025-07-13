@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Selamat Ulang Tahun, N.YUSI 💖</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #ff9a9e, #fad0c4);
+      color: #fff;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-top: 50px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .subjudul {
+      font-size: 1.5em;
+      margin-top: -10px;
+      margin-bottom: 30px;
+    }
+
+    .kata {
+      font-size: 1.2em;
+      margin: 20px auto;
+      max-width: 700px;
+      line-height: 1.6;
+      padding: 0 20px;
+      animation: fadeIn 3s ease-in-out;
+    }
+
+    .galeri {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .galeri img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .galeri img:hover {
+      transform: scale(1.05);
+    }
+
+    .footer {
+      margin: 40px 0;
+      font-size: 1em;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Hati jatuh */
+    .heart {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: red;
+      transform: rotate(45deg);
+      animation: fall 10s infinite linear;
+    }
+
+    .heart::before,
+    .heart::after {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: red;
+      border-radius: 50%;
+    }
+
+    .heart::before {
+      top: -10px;
+      left: 0;
+    }
+
+    .heart::after {
+      left: -10px;
+      top: 0;
+    }
+
+    @keyframes fall {
+      0% {
+        top: -10%;
+        opacity: 1;
+      }
+      100% {
+        top: 110%;
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Selamat Ulang Tahun, N.YUSI SITI BADRIAH 🎉</h1>
+  <div class="subjudul">22 Tahun yang penuh cahaya dan cinta 💖</div>
+
+  <div class="kata">
+
+اَللَّهُمَّ إِنِّي أَسْأَلُكَ خَيْرَ هَذَا الْيَوْمَ فَتْحَهُ وَنَصْرَهُ وَنُوْرَهُ وَبَرَكَتَهُ وَهُدَاهُ. اَللَّهُمَّ إِنِّي أَسْأَلُكَ خَيْرَ هَذَا الْيَوْمَ وَخَيْرَ مَا فِيْهِ وَخَيْرَ مَا قَبْلَهُ وَخَيْرَ مَا بَعْدَهُ. وَأَعُوْذُ بِكَ مِنْ شَرِّ هَذَا الْيَوْمِ وَشَرِّ مَا فِيْهِ وَشَرِّ مَا قَبْلَهُ وَشَرِّ مَا بَعْدَهُ
+    <br>happy birthday sayanggkuu🥳🥳🥰Sayangku N.YUSI🎂💖,<br>
+    semoga dengan bertambahnya usiamu, semakin sempurna juga imanmu, rajin ibadahnya,
+	selalu diberi kesehatan sama yang mahakuasa, panjang umur, selalu bahagia, berbakti terus sama orangtua, 
+	serta segala doa dan cita cita yang kamu inginkan bisa terwujud dan dimudahkan dalam segala urusan. Aamiin
+.<br><br>
+    semangat terus buat kejar semua keinginan kamu, kamu pasti bisa sayangg,
+	jangan pernah takut gagal yaa, aku selalu dukung kamu dan support kamu sayang, jangan cape yaa sayangg!
+	semangat terus aku selalu ada disamping kamu, selalu rendah hati, jadi anak baik ya , selalu sayang sama keluarga yaa, jangan lupa untuk selalu bersyukur yaa ,
+	semoga apapun yang kamu lakukan hari ini dan hari berikutnya selalu diberi kelancaran serta keselamatan,Aaminn.  
+    <br><br>
+    Aku mencintaimu selalu, dari hatiku yang terdalam. 💕
+  </div>
+
+  <div class="gallery">
+    <img src="[LINK_GAMBAR_1]" alt="Foto 1">
+    <img src="[LINK_GAMBAR_2]" alt="Foto 2">
+    <img src="[LINK_GAMBAR_3]" alt="Foto 3">
+  </div>
+
+
+  <div class="footer">❤ Dari seseorang yang selalu mencintaimu tanpa batas</div>
+
+  <!-- Animasi hati jatuh -->
+  <script>
+    function createHeart() {
+      const heart = document.createElement("div");
+      heart.className = "heart";
+      heart.style.left = Math.random() * 100 + "vw";
+      heart.style.animationDuration = (5 + Math.random() * 5) + "s";
+      document.body.appendChild(heart);
+      setTimeout(() => heart.remove(), 10000);
+    }
+    setInterval(createHeart, 400);
+  </script>
+
+</body>
+</html>
